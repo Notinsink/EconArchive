@@ -1,0 +1,53 @@
+<!-- archive.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EconArchive</title>
+<link rel="stylesheet" href="archive.css">
+</head>
+<body>
+<header>
+<div class="logo-search-container">
+<span class="logo"><i class="fas fa-search"></i>EconArchive</span>
+<select id="search-select">
+<option value="">Select an institution</option>
+<option value="cbn.html">Central Bank of Nigeria (CBN)</option>
+<option value="nse.html">Nigerian Stock Exchange (NSE)</option>
+<option value="sec.html">Securities and Exchange Commission (SEC)</option>
+<option value="pencom.html">National Pension Commission (PENCOM)</option>
+<option value="firs.html">Federal Inland Revenue Service (FIRS)</option>
+<option value="ndic.html">Nigerian Deposit Insurance Corporation (NDIC)</option>
+<option value="amcon.html">Asset Management Corporation of Nigeria (AMCON)</option>
+<option value="nexim.html">Nigerian Export-Import Bank (NEXIM)</option>
+<option value="boi.html">Bank of Industry (BOI)</option>
+<option value="dbn.html">Development Bank of Nigeria (DBN)</option>
+<option value="fmf.html">Federal Ministry of Finance</option>
+<option value="nnpc.html">Nigerian National Petroleum Corporation (NNPC)</option>
+<option value="nipc.html">Nigerian Investment Promotion Commission (NIPC)</option>
+<option value="smedan.html">Small and Medium Enterprises Development Agency of Nigeria (SMEDAN)</option>
+<option value="nbs.html">National Bureau of Statistics (NBS)</option>
+<option value="ncs.html">Nigerian Customs Service (NCS)</option>
+<option value="fmbn.html">Federal Mortgage Bank of Nigeria (FMBN)</option>
+<option value="npa.html">Nigerian Ports Authority (NPA)</option>
+<option value="nsc.html">Nigerian Shippers' Council (NSC)</option>
+<option value="icrc.html">Infrastructure Concession Regulatory Commission (ICRC)</option>
+</select>
+<button id="search-button">select</button>
+</div>
+</header>
+<main>
+    <!-- main content will go here -->
+</main>
+<script>
+document.getElementById('search-button').addEventListener('click', function() {
+var institution = document.getElementById('search-select').value;
+if (institution!== '') {
+window.location.href = institution;
+}
+});
+</script>
+</body>
+</html>
